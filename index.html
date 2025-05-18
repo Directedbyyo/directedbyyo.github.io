@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directedbyyo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directedbyyo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <header>
-        <img src="images/banner-placeholder.jpg" alt="Directedbyyo Banner" class="header-img">
-        <h1>Directedbyyo</h1>
+<body class="bg-black text-white font-sans">
+  <div class="max-w-screen-md mx-auto px-4">
+
+    <!-- Header with only text -->
+    <header class="mb-10">
+      <h1 class="text-center text-4xl font-bold mt-10">Directedbyyo</h1>
     </header>
-    <section class="gallery">
-        <h2>Photography</h2>
-        <div class="images">
-            <img src="images/IMG_2500.jpeg" alt="Catwears Shoot 1">
-            <img src="images/IMG_2503.jpeg" alt="Catwears Shoot 2">
-            <img src="images/IMG_2153.jpeg" alt="Influencer Portrait">
-        </div>
+
+    <!-- Photography Gallery -->
+    <section class="gallery mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Photography</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <img src="images/IMG_2500.jpeg" alt="Catwears Shoot 1" class="w-72 rounded-lg shadow-md" />
+        <img src="images/IMG_2503.jpeg" alt="Catwears Shoot 2" class="w-72 rounded-lg shadow-md" />
+        <img src="images/IMG_2153.jpeg" alt="Influencer Portrait" class="w-72 rounded-lg shadow-md" />
+      </div>
     </section>
-    <section class="videos">
-        <h2>Video Projects</h2>
-        <p><strong>Silly</strong> – ECCOTHEGODFATHER (Directed by YO)</p>
-        <video controls>
-            <source src="videos/silly.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+
+    <!-- Videos -->
+    <section class="videos mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Video Projects</h2>
+
+      <div class="mb-8">
+        <p class="mb-2"><strong>Silly</strong> – ECCOTHEGODFATHER (Directed by YO)</p>
+        <video controls class="w-full rounded-xl shadow-md">
+          <source src="videos/silly.mp4" type="video/mp4" />
         </video>
-        <p><strong>Purpose</strong> – JMizi (Directed by YO)</p>
-        <video controls>
-            <source src="videos/purpose.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+      </div>
+
+      <div class="mb-8">
+        <p class="mb-2"><strong>Purpose</strong> – JMizi (Directed by YO)</p>
+        <video controls class="w-full rounded-xl shadow-md">
+          <source src="videos/purpose.mp4" type="video/mp4" />
         </video>
+      </div>
     </section>
-    <footer>
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:Yinkaope@icloud.com">Yinkaope@icloud.com</a></p>
-        <p>YouTube: <a href="https://www.youtube.com/" target="_blank">Visit Channel</a></p>
+
+    <!-- Contact -->
+    <footer class="text-center mb-10">
+      <h3 class="text-xl font-semibold mb-2">Contact</h3>
+      <p>Email: <a href="mailto:Yinkaope@icloud.com" class="underline">Yinkaope@icloud.com</a></p>
+      <p class="mt-2">
+        YouTube: 
+        <a href="https://youtube.com/@directedbyyo?feature=shared" target="_blank" class="text-blue-400 underline">
+          @directedbyyo
+        </a>
+      </p>
     </footer>
+
+  </div>
 </body>
 </html>
