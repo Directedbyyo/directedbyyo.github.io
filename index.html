@@ -1,41 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directedbyyo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directedbyyo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .videos video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      margin-bottom: 30px;
+    }
+
+    a {
+      color: #00bfff;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <!-- Title Only -->
     <header>
-        <img src="images/banner-placeholder.jpg" alt="Directedbyyo Banner" class="header-img">
-        <h1>Directedbyyo</h1>
+      <h1>Directedbyyo</h1>
     </header>
-    <section class="gallery">
-        <h2>Photography</h2>
-        <div class="images">
-            <img src="images/IMG_2500.jpeg" alt="Catwears Shoot 1">
-            <img src="images/IMG_2503.jpeg" alt="Catwears Shoot 2">
-            <img src="images/IMG_2153.jpeg" alt="Influencer Portrait">
-        </div>
+
+    <!-- Photo Gallery -->
+    <section>
+      <h2>Photography</h2>
+      <div class="gallery">
+        <img src="images/IMG_2500.jpeg" alt="Catwears Shoot 1" />
+        <img src="images/IMG_2503.jpeg" alt="Catwears Shoot 2" />
+        <img src="images/IMG_2153.jpeg" alt="Influencer Portrait" />
+      </div>
     </section>
+
+    <!-- Video Projects -->
     <section class="videos">
-        <h2>Video Projects</h2>
+      <h2>Video Projects</h2>
+
+      <div>
         <p><strong>Silly</strong> – ECCOTHEGODFATHER (Directed by YO)</p>
         <video controls>
-            <source src="videos/silly.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+          <source src="videos/silly.mp4" type="video/mp4" />
         </video>
+      </div>
+
+      <div>
         <p><strong>Purpose</strong> – JMizi (Directed by YO)</p>
         <video controls>
-            <source src="videos/purpose.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+          <source src="videos/purpose.mp4" type="video/mp4" />
         </video>
+      </div>
     </section>
+
+    <!-- Contact Info -->
     <footer>
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:Yinkaope@icloud.com">Yinkaope@icloud.com</a></p>
-        <p>YouTube: <a href="https://www.youtube.com/" target="_blank">Visit Channel</a></p>
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:Yinkaope@icloud.com">Yinkaope@icloud.com</a></p>
+      <p>YouTube: <a href="https://youtube.com/@directedbyyo?feature=shared" target="_blank">@directedbyyo</a></p>
     </footer>
+  </div>
 </body>
 </html>
