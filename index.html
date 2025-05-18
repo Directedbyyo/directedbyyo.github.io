@@ -5,39 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Directedbyyo</title>
   <link rel="stylesheet" href="style.css" />
-</head>
-<body class="bg-black text-white font-sans">
-  <div class="max-w-screen-md mx-auto px-4">
+  <style>
+    /* Add this if not using Tailwind to force image layout */
+    .gallery-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
 
-    <!-- Header with only text -->
+    .gallery-images img {
+      width: 300px;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .container {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
     <header class="mb-10">
-      <h1 class="text-center text-4xl font-bold mt-10">Directedbyyo</h1>
+      <h1 class="text-4xl font-bold mt-10">Directedbyyo</h1>
     </header>
 
     <!-- Photography Gallery -->
     <section class="gallery mb-12">
-      <h2 class="text-2xl font-semibold mb-4 text-center">Photography</h2>
-      <div class="flex flex-wrap justify-center gap-4">
-        <img src="images/IMG_2500.jpeg" alt="Catwears Shoot 1" class="w-72 rounded-lg shadow-md" />
-        <img src="images/IMG_2503.jpeg" alt="Catwears Shoot 2" class="w-72 rounded-lg shadow-md" />
-        <img src="images/IMG_2153.jpeg" alt="Influencer Portrait" class="w-72 rounded-lg shadow-md" />
+      <h2 class="text-2xl font-semibold mb-4">Photography</h2>
+      <div class="gallery-images">
+        <img src="images/IMG_2500.jpeg" alt="Catwears Shoot 1" />
+        <img src="images/IMG_2503.jpeg" alt="Catwears Shoot 2" />
+        <img src="images/IMG_2153.jpeg" alt="Influencer Portrait" />
       </div>
     </section>
 
     <!-- Videos -->
     <section class="videos mb-12">
-      <h2 class="text-2xl font-semibold mb-4 text-center">Video Projects</h2>
+      <h2 class="text-2xl font-semibold mb-4">Video Projects</h2>
 
       <div class="mb-8">
-        <p class="mb-2"><strong>Silly</strong> – ECCOTHEGODFATHER (Directed by YO)</p>
-        <video controls class="w-full rounded-xl shadow-md">
+        <p><strong>Silly</strong> – ECCOTHEGODFATHER (Directed by YO)</p>
+        <video controls>
           <source src="videos/silly.mp4" type="video/mp4" />
         </video>
       </div>
 
       <div class="mb-8">
-        <p class="mb-2"><strong>Purpose</strong> – JMizi (Directed by YO)</p>
-        <video controls class="w-full rounded-xl shadow-md">
+        <p><strong>Purpose</strong> – JMizi (Directed by YO)</p>
+        <video controls>
           <source src="videos/purpose.mp4" type="video/mp4" />
         </video>
       </div>
@@ -54,7 +91,6 @@
         </a>
       </p>
     </footer>
-
   </div>
 </body>
 </html>
