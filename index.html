@@ -4,75 +4,86 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Directedbyyo</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
-    /* Add this if not using Tailwind to force image layout */
-    .gallery-images {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-    }
-
-    .gallery-images img {
-      width: 300px;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
-    video {
-      width: 100%;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
     body {
       margin: 0;
+      padding: 0;
       background-color: black;
       color: white;
       font-family: sans-serif;
     }
 
     .container {
-      max-width: 768px;
+      max-width: 800px;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 20px;
     }
 
     h1, h2, h3 {
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .videos video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+      margin-bottom: 30px;
+    }
+
+    a {
+      color: #00bfff;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 60px;
       text-align: center;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Header -->
-    <header class="mb-10">
-      <h1 class="text-4xl font-bold mt-10">Directedbyyo</h1>
+    <!-- Title Only -->
+    <header>
+      <h1>Directedbyyo</h1>
     </header>
 
-    <!-- Photography Gallery -->
-    <section class="gallery mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Photography</h2>
-      <div class="gallery-images">
+    <!-- Photo Gallery -->
+    <section>
+      <h2>Photography</h2>
+      <div class="gallery">
         <img src="images/IMG_2500.jpeg" alt="Catwears Shoot 1" />
         <img src="images/IMG_2503.jpeg" alt="Catwears Shoot 2" />
         <img src="images/IMG_2153.jpeg" alt="Influencer Portrait" />
       </div>
     </section>
 
-    <!-- Videos -->
-    <section class="videos mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Video Projects</h2>
+    <!-- Video Projects -->
+    <section class="videos">
+      <h2>Video Projects</h2>
 
-      <div class="mb-8">
+      <div>
         <p><strong>Silly</strong> – ECCOTHEGODFATHER (Directed by YO)</p>
         <video controls>
           <source src="videos/silly.mp4" type="video/mp4" />
         </video>
       </div>
 
-      <div class="mb-8">
+      <div>
         <p><strong>Purpose</strong> – JMizi (Directed by YO)</p>
         <video controls>
           <source src="videos/purpose.mp4" type="video/mp4" />
@@ -80,16 +91,11 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <footer class="text-center mb-10">
-      <h3 class="text-xl font-semibold mb-2">Contact</h3>
-      <p>Email: <a href="mailto:Yinkaope@icloud.com" class="underline">Yinkaope@icloud.com</a></p>
-      <p class="mt-2">
-        YouTube: 
-        <a href="https://youtube.com/@directedbyyo?feature=shared" target="_blank" class="text-blue-400 underline">
-          @directedbyyo
-        </a>
-      </p>
+    <!-- Contact Info -->
+    <footer>
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:Yinkaope@icloud.com">Yinkaope@icloud.com</a></p>
+      <p>YouTube: <a href="https://youtube.com/@directedbyyo?feature=shared" target="_blank">@directedbyyo</a></p>
     </footer>
   </div>
 </body>
